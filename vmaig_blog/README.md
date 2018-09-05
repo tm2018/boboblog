@@ -1,10 +1,5 @@
 vmaig.com 网站源码
 =================
-[![ENV](https://img.shields.io/badge/python-2.7%2C3.4-blue.svg)](https://github.com/billvsme/vmaig_blog)
-[![LICENSE](https://img.shields.io/badge/license-BSD-blue.svg)](https://github.com/billvsme/vmaig_blog/blob/master/LICENSE)
-[![Travis](https://img.shields.io/travis/billvsme/vmaig_blog.svg)](https://travis-ci.org/billvsme/vmaig_blog)
-[![Docker Stars](https://img.shields.io/docker/stars/billvsme/vmaig_blog.svg)](https://hub.docker.com/r/billvsme/vmaig_blog/)
-[![Docker Pulls](https://img.shields.io/docker/pulls/billvsme/vmaig_blog.svg)](https://hub.docker.com/r/billvsme/vmaig_blog/)
 # 有问题欢迎加qq
  1744381765
 
@@ -15,12 +10,12 @@ vmaig\_blog 是一个基于  **Django1.8**  跟  **Bootstrap3**  开发的 **博
 本项目是对https://gitee.com/billvsme/vmaig_blog 的改进和bug修复，改进项如下。
 
 # 改进内容
-1.修复在django后台编辑文章，标题和英文标题无法输入‘空格’，‘-’等特殊字符报错
-2.修复当文章分类存在多级分类时，主分类无法显示二级分类下文章（目前只支持最多二级分类，三级和多级后续再改）
-3.改进注册时头像选择，会从vmaig_blog/blog/static/tx下随机选一张图片作用户头像
-4.增加导航栏的排序功能，前端会按照后台设置的排序值大小从左向右依次显示
-5.增加“关于我”的显示栏目
-6.屏蔽了标签云和轮播及资讯模块
+1. 修复在django后台编辑文章，标题和英文标题无法输入‘空格’，‘-’等特殊字符报错
+2. 修复当文章分类存在多级分类时，主分类无法显示二级分类下文章（目前只支持最多二级分类，三级和多级后续再改)
+3. 改进注册时头像选择，会从vmaig_blog/blog/static/tx下随机选一张图片作用户头像
+4. 增加导航栏的排序功能，前端会按照后台设置的排序值大小从左向右依次显示
+5. 增加“关于我”的显示栏目
+6. 屏蔽了标签云和轮播及资讯模块
 
 # 功能
 1. 文章,分类,专栏的添加，删除，修改。支持**tinymce**富文本编辑器。支持文章中代码**高亮**。
