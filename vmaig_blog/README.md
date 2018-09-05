@@ -5,21 +5,23 @@ vmaig.com 网站源码
 [![Travis](https://img.shields.io/travis/billvsme/vmaig_blog.svg)](https://travis-ci.org/billvsme/vmaig_blog)
 [![Docker Stars](https://img.shields.io/docker/stars/billvsme/vmaig_blog.svg)](https://hub.docker.com/r/billvsme/vmaig_blog/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/billvsme/vmaig_blog.svg)](https://hub.docker.com/r/billvsme/vmaig_blog/)
-# 有问题欢迎加qq群
-vmaig qq群: 458788510  
-我的qq: 994171686  
+# 有问题欢迎加qq
+ 1744381765
 
 [使用Docker部署vmaig_blog](http://vmaig.com/article/deplay_vmaig_blog.html)
 
-# 更新日志
-2015/5/15 从django1.6 升级到 django1.8 (还保留django1.6分支)  
-2015/6/21 添加[xadmin分支](https://github.com/billvsme/vmaig_blog/tree/xadmin),xadmin分支中使用xadmin作为后台管理(使用 django 1.8),如果你想后台比较漂亮可以切换到xadmin分支(注意你不需要pip install django-xadmin 但是需要安装django-crispy-forms跟django-reversion详细步骤见xadmin分支中的README)  
-2015/7/5 对xadmin分支中的错误进行了比较大的修改  
-2016/3/17 添加评论回复  
-2016/3/22 添加Dockerfile，使用Docker部署本博客  
-
 # 概述
-vmaig\_blog 是一个基于  **Django1.8**  跟  **Bootstrap3**  开发的 **博客系统** ，实现了一个博客完整的功能。https://vmaig.com 就是基于vmaig\_blog 搭建的。
+vmaig\_blog 是一个基于  **Django1.8**  跟  **Bootstrap3**  开发的 **博客系统** ，实现了一个博客完整的功能。
+本项目是对https://gitee.com/billvsme/vmaig_blog 的改进和bug修复，改进项如下。
+
+# 改进内容
+1.修复在django后台编辑文章，标题和英文标题无法输入‘空格’，‘-’等特殊字符报错
+2.修复当文章分类存在多级分类时，主分类无法显示二级分类下文章（目前只支持最多二级分类，三级和多级后续再改）
+3.改进注册时头像选择，会从vmaig_blog/blog/static/tx下随机选一张图片作用户头像
+4.增加导航栏的排序功能，前端会按照后台设置的排序值大小从左向右依次显示
+5.增加“关于我”的显示栏目
+6.屏蔽了标签云和轮播及资讯模块
+
 # 功能
 1. 文章,分类,专栏的添加，删除，修改。支持**tinymce**富文本编辑器。支持文章中代码**高亮**。
 2. 实现**用户注册,登陆,修改密码,忘记重置密码**。通过**邮箱**通知注册用户, 用户忘记密码基于邮件（需要在setting.py设置好邮箱)。
@@ -32,7 +34,7 @@ vmaig\_blog 是一个基于  **Django1.8**  跟  **Bootstrap3**  开发的 **博
 9. 支持**手机浏览**，对手机浏览进行了调整。
 
 # Demo
-https://vmaig.com   
+http://www.alewolf.com
 
 # 预览
 ![首页](http://vmaig.qiniudn.com/screenshot/vmaig_01.jpg)
@@ -53,8 +55,8 @@ https://vmaig.com
 
 下载代码,切换目录 :
     
-    git clone https://github.com/billvsme/vmaig_blog
-    cd vmaig_blog
+    git clone https://github.com/tm2018/boboblog.git
+    cd boboblog/vmaig_blog
 
 首先安装相关Pillow 用到的c库 :
 (详见https://pillow.readthedocs.org/en/3.1.x/installation.html#building-on-linux)
